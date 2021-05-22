@@ -22,10 +22,8 @@ function display_content_folder($files, $folder){
     $content = '';
     foreach($files as $elem => $value){
         if (is_dir($folder . '\\' . $value)){
-            //$content .= '<a href="'. $folder .'\\'. $value .'">'. $folder . "\\" . $value .'</a>' . '<br>';
             array_push($arr, ['folder' => $folder . '\\' . $value]);
         }else{
-            //$content .= $folder . "\\" . $value . '<br>';
             array_push($arr, ['url' => $folder . '\\' . $value]);
         }        
     }

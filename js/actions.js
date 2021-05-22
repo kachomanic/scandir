@@ -34,6 +34,22 @@ $('document').ready(function(){
         $("#floatingInput").val(main_dir);
     });
 
+    $(document).on('click','#download',function(){
+        let csvContent = "data:text/csv;charset=utf-8,";
+        Object.entries(list.content).forEach(([key, value]) => {
+            Object.entries(value).forEach(([key, value]) => {
+                csvContent += value + "\r\n";
+              });
+          });
+
+          var encodedUri = encodeURI(csvContent);
+          var link = document.createElement("a");
+          link.setAttribute("href", encodedUri);
+          link.setAttribute("download", "data.csv");
+          document.body.appendChild(link);          
+          link.click();
+    });
+
     $(document).on('click','#back',function(){
         if (previous_dir != '')
         {
