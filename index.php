@@ -21,9 +21,9 @@ function read_folder($folder){
   <title>IHNCA-UCA</title>
   <meta name="description" content="UCA/IHNCA">
   <meta name="author" content="SitePoint">
-  <script src="jquery.min.js"></script>
-  <script src="actions.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/actions.js"></script>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 </head>
 <body>
