@@ -21,6 +21,9 @@ $('document').ready(function(){
         current_dir = route;
         previous_dir = previous_folder(current_dir);
         display_main(route);
+        document.getElementById("home").classList.add('btn');
+        document.getElementById("home").classList.add('btn-primary');
+        document.getElementById("home").classList.add('btn-lg');
         document.getElementById("home").classList.add(route);
         $("#floatingInput").val(current_dir);
     });

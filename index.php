@@ -60,7 +60,7 @@ function read_folder($folder){
   </div>
 </nav>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <div class="col">
       <div class="container-fluid" style="margin-top:80px;">
@@ -68,8 +68,10 @@ function read_folder($folder){
         <input type="email" class="form-control" id="floatingInput" placeholder="" readonly>
         <label for="floatingInput">Directorio Actual</label>
       </div>
-        <input type="button" id="home" value="Inicio">
-        <input type="button" id="back" value="Atras">
+        <button type="button" id="home" class="btn btn-primary btn-lg">Inicio</button>
+        <button type="button" id="back" class="btn btn-primary btn-lg">Atras</button>
+        <button type="button" id="download" class="btn btn-primary btn-lg">Descargar lista</button>
+        <br>
         <br>
         <div id="list">
         </div>
