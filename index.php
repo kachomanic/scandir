@@ -39,22 +39,6 @@ function read_folder($folder){
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Catálogo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Website</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Enlaces
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
       </ul>
     </div>
   </div>
@@ -65,8 +49,8 @@ function read_folder($folder){
     <div class="col">
       <div class="container-fluid" style="margin-top:80px;">
       <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="" readonly>
         <label for="floatingInput">Directorio Actual</label>
+        <input type="email" class="form-control" id="floatingInput" placeholder="" readonly>
       </div>
         <button type="button" id="home" class="btn btn-primary btn-lg">Inicio</button>
         <button type="button" id="back" class="btn btn-primary btn-lg">Atras</button>
